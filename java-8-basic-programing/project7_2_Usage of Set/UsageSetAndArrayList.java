@@ -27,7 +27,7 @@ public class UsageSetAndArrayList {
 		
 //		output : 
 //		setList1 : [a, b, c, d, e]
-//		setList2 : [a, b, c, d, e]
+//		setList2 : []
 //		a 4
 //		b 3
 //		d 1
