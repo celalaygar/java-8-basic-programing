@@ -16,7 +16,6 @@ public class UsageSetAndArrayList {
 		System.out.println("setList2 : "+setList2);
 		for (String value : setList1) { 
 			if(setList1.contains(value)) {
-				setList2.remove(value);
 				setList2.add( value+" "+Collections.frequency(list, value));
 			} else  System.out.println("false");
 		}  
