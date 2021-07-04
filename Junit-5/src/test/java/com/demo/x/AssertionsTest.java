@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class AssertionsTest {
 
+	@Disabled
 	@Test
 	void testCase1() 
 	{
@@ -20,6 +22,7 @@ public class AssertionsTest {
 	    //Test will fail
 	    Assertions.assertEquals(true, false, "true test failed"); 
 	}
+	@Disabled
 	@Test
 	void testCase2() 
 	{
@@ -28,6 +31,7 @@ public class AssertionsTest {
 	    //Test will fail 
 	    Assertions.assertNotEquals(4, Calculator.add(2, 2), "Calculator.add(2, 2) test failed"); 
 	}
+	@Disabled
 	@Test
 	void testCase3() 
 	{
@@ -44,5 +48,24 @@ public class AssertionsTest {
 	     
 	    //Test will fail
 	    Assertions.assertIterableEquals(listOne, listFour);
+	}
+	
+	@Test
+	void testCase4() 
+	{    
+	    String nullString = null;
+	    String notNullString = "howtodoinjava.com";
+	     
+	    //Test will pass
+	    Assertions.assertNotNull(notNullString);
+	     
+	    //Test will fail
+	    Assertions.assertNotNull(nullString);
+	     
+	    //Test will pass
+	    Assertions.assertNull(nullString);
+	 
+	    // Test will fail
+	    Assertions.assertNull(notNullString);
 	}
 }
