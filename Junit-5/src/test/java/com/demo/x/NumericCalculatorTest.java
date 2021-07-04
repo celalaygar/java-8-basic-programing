@@ -6,7 +6,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
+@RunWith(JUnitPlatform.class)
 class NumericCalculatorTest {
 
 	@Disabled("Do not run in lower environment")
