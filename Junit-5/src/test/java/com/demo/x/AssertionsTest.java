@@ -68,4 +68,29 @@ public class AssertionsTest {
 	    // Test will fail
 	    Assertions.assertNull(notNullString);
 	}
+	
+	
+	@Test
+	void testCase5() 
+	{    
+	    String originalObject = "howtodoinjava.com";
+	    String cloneObject = originalObject;
+	    String otherObject = "example.com";
+	    String otherObject2 = "example.com";
+	     
+	    //Test will pass
+	    Assertions.assertNotSame(originalObject, otherObject);
+	     
+	    //Test will fail
+	    Assertions.assertNotSame(originalObject, cloneObject);
+	     
+	    //Test will pass
+	    Assertions.assertSame(originalObject, cloneObject);
+	 
+	    // Test will fail
+	    Assertions.assertSame(originalObject, otherObject);
+	    
+	    // Test will pass
+	    Assertions.assertSame(otherObject, otherObject2);
+	}
 }
